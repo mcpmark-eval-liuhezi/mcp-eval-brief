@@ -1,0 +1,7 @@
+# Shareable summary — GitHub MCP Server adoption
+
+> **Note on the intended format:** This summary was meant to live as a GitHub gist, but gist creation failed with `403 Resource not accessible by personal access token` (the token in use lacks gist scope). The paragraph below is the gist content, committed here so it isn't lost; once a token with gist scope is available it can be created as a gist verbatim from this file.
+
+---
+
+Our team is evaluating the GitHub MCP Server as the standard for internal automation. It's GitHub's official, MIT-licensed server (latest release v2.0.2, published 2026-10-08) that connects AI tools to GitHub — letting agents read code, manage issues and PRs, analyze security findings, and automate workflows through natural language. It runs two ways: as a hosted remote server (https://api.githubcopilot.com/mcp/, OAuth or PAT, zero infra) or self-hosted in Docker with a personal access token when data must stay in our perimeter. Toolsets give us meaningful blast-radius control — we'd start on the default set (context, repos, issues, pull_requests, users) and expand deliberately, with a read-only mode available for trials. The project is active, with a fresh bugfix release and responsive human review on open PRs. It speaks the Model Context Protocol, an open standard for connecting AI applications to external systems — think "USB-C for AI apps" — which means one integration works across Claude, ChatGPT, VS Code, Cursor and more.
