@@ -81,12 +81,12 @@ Special toolset `all` enables every toolset regardless of other configuration.
 - **Latest published release: `v2.0.2`**, release name "GitHub MCP Server 2.0.2".
 - Release ID: 406753657; created at 2026-10-08T11:26:10Z; published at 2026-10-08T11:33:15Z; target commitish `main`; not a draft, not a prerelease.
 - Release notes: "## Bugfix release — fix(inventory): restore typed tool HTTP header validation by @SamMorrowDrums in #3454"; full changelog `v2.0.1...v2.0.2`.
-- Git tag `v2.0.2` (tag object SHA `503622d154b505a9cebff296a13bc6c9259ea993`, message "Release v2.0.2", tagger date 2026-10-08T11:26:10Z) points at commit `eb47a99ddb866ca2b8a162920e6bda9521f33ebb`. The tag is unsigned (verification: not verified / unsigned).
-- Notable release assets (sizes and download counts exactly as reported):
-  - `github-mcp-server_2.0.2_checksums.txt` — 824 bytes, 3399 downloads, digest `sha256:786ee910d74ff2ee8ad328cdad40a29cf1270ec96aae8217b044bb274d09424f`
-  - `github-mcp-server_Darwin_arm64.tar.gz` — 8848361 bytes, 7199 downloads
+- Git tag `v2.0.2` (tag object SHA `503622d154b505a9cebff296a13bc6c9259ea993`, message "Release v2.0.2", tagger Sam Morrow, tagger date 2026-10-08T11:26:10Z) points at commit `eb47a99ddb866ca2b8a162920e6bda9521f33ebb`. The tag is unsigned (verification: not verified / unsigned).
+- Notable release assets (sizes and download counts exactly as reported by the API at research time; download counts drift continuously, so expect slightly higher numbers by the time you read this):
+  - `github-mcp-server_2.0.2_checksums.txt` — 824 bytes, 3407 downloads, digest `sha256:786ee910d74ff2ee8ad328cdad40a29cf1270ec96aae8217b044bb274d09424f`
+  - `github-mcp-server_Darwin_arm64.tar.gz` — 8848361 bytes, 7202 downloads
   - `github-mcp-server_Darwin_x86_64.tar.gz` — 9427411 bytes, 483 downloads
-  - `github-mcp-server_Linux_arm64.tar.gz` — 8417035 bytes, 1404 downloads
+  - `github-mcp-server_Linux_arm64.tar.gz` — 8417035 bytes, 1409 downloads
   - `github-mcp-server_Linux_i386.tar.gz` — 8742842 bytes, 45 downloads
 
 ### Cross-check result: ✅ AGREE
@@ -113,6 +113,8 @@ The PR's own checklist confirms: no tool or API changes, no security/limits impa
 
 - Two from `copilot-pull-request-reviewer[bot]` (2026-10-19T15:30:11Z and 2026-10-20T12:06:43Z), both "Approval recommended / no open issues" (state COMMENTED).
 - One human review from JoannaaKL (COLLABORATOR, 2026-10-20T14:14:33Z, state COMMENTED) — the most recent activity. Its inline comment on `script/licenses` pushes back on the pinning approach and suggests making the normalization **generic** (drop any `/vN/` folder from license URLs via a regex) rather than hard-coding `jd` v2.5.0, so the fix doesn't quietly stop matching when `jd` is bumped. That suggestion appears unaddressed as of this research.
+
+Further activity signals: the repository's navigation at research time showed **193 open issues** and **188 open pull requests**; the repo was pushed to at 2026-10-19T15:23:31Z.
 
 Activity read: the project is clearly active — latest release published 2026-10-08, an open PR opened and updated within the last two days, ongoing maintainer review, and automated Copilot review on PRs.
 
